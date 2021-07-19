@@ -11,6 +11,9 @@
 		0748334A267738BF00CA1C95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07483349267738BF00CA1C95 /* ContentView.swift */; };
 		0748334C267738C000CA1C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0748334B267738C000CA1C95 /* Assets.xcassets */; };
 		0748334F267738C000CA1C95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0748334E267738C000CA1C95 /* Preview Assets.xcassets */; };
+		0748335726773D4100CA1C95 /* PhotoImportHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748335626773D4100CA1C95 /* PhotoImportHelper.swift */; };
+		0748335926776EF800CA1C95 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748335826776EF800CA1C95 /* Modifiers.swift */; };
+		0748335B2677704C00CA1C95 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748335A2677704C00CA1C95 /* HelpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		0748334B267738C000CA1C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0748334E267738C000CA1C95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		07483350267738C000CA1C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0748335626773D4100CA1C95 /* PhotoImportHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImportHelper.swift; sourceTree = "<group>"; };
+		0748335826776EF800CA1C95 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		0748335A2677704C00CA1C95 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				07483347267738BF00CA1C95 /* FautauApp.swift */,
-				07483349267738BF00CA1C95 /* ContentView.swift */,
+				0748335C267781C400CA1C95 /* Views */,
+				0748335626773D4100CA1C95 /* PhotoImportHelper.swift */,
 				0748334B267738C000CA1C95 /* Assets.xcassets */,
 				07483350267738C000CA1C95 /* Info.plist */,
 				0748334D267738C000CA1C95 /* Preview Content */,
@@ -67,6 +74,16 @@
 				0748334E267738C000CA1C95 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0748335C267781C400CA1C95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07483349267738BF00CA1C95 /* ContentView.swift */,
+				0748335A2677704C00CA1C95 /* HelpView.swift */,
+				0748335826776EF800CA1C95 /* Modifiers.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0748334A267738BF00CA1C95 /* ContentView.swift in Sources */,
+				0748335726773D4100CA1C95 /* PhotoImportHelper.swift in Sources */,
+				0748335926776EF800CA1C95 /* Modifiers.swift in Sources */,
+				0748335B2677704C00CA1C95 /* HelpView.swift in Sources */,
 				07483348267738BF00CA1C95 /* FautauApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
