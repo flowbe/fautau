@@ -12,9 +12,9 @@ struct BarIcon: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-        .accessibilityLabel(label)
-        .font(.body)
-        .imageScale(.large)
+            .accessibilityLabel(label)
+            .font(.body)
+            .imageScale(.large)
     }
 }
 

@@ -5,10 +5,10 @@
 //  Created by Florentin BEKIER on 14/06/2021.
 //
 
-import UIKit
 import Combine
-import Photos
 import os.log
+import Photos
+import UIKit
 
 /// Helper class containing methods for image import.
 class PhotoImportHelper: ObservableObject {
@@ -92,7 +92,7 @@ class PhotoImportHelper: ObservableObject {
     }
 
     private func createAlbumIfNeeded() {
-        if let assetCollection = self.fetchAssetCollectionForAlbum() {
+        if let assetCollection = fetchAssetCollectionForAlbum() {
             self.assetCollection = assetCollection
         } else {
             PHPhotoLibrary.shared().performChanges { [self] in

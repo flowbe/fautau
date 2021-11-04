@@ -10,17 +10,17 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject private var photoImportHelper = PhotoImportHelper()
 
-    @State var isLoading = false
-    @State var showAlert = false
-    @State var alertTitle = Text("Alert")
-    @State var alertMessage: Text?
-    @State var showHelp = false
+    @State private var isLoading = false
+    @State private var showAlert = false
+    @State private var alertTitle = Text("Alert")
+    @State private var alertMessage: Text?
+    @State private var showHelp = false
 
     var body: some View {
         NavigationView {
             ZStack {
                 Color(.systemGroupedBackground)
-                .ignoresSafeArea()
+                    .ignoresSafeArea()
                 VStack(spacing: 16.0) {
                     Text("\(photoImportHelper.photosCount) images found")
                     Button(action: importImages) {
@@ -36,16 +36,16 @@ struct ContentView: View {
                 showHelp = true
             }, label: {
                 Image(systemName: "questionmark.circle")
-                .barIcon(label: "Help")
+                    .barIcon(label: "Help")
             }), trailing: HStack {
                 Button(action: photoImportHelper.openDocumentDirectory) {
                     Image(systemName: "folder")
-                    .barIcon(label: "Go to folder")
+                        .barIcon(label: "Go to folder")
                 }
                 .padding()
                 Button(action: fetchImages) {
                     Image(systemName: "arrow.clockwise")
-                    .barIcon(label: "Reload")
+                        .barIcon(label: "Reload")
                 }
                 .disabled(isLoading)
             })
